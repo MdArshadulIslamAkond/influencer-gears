@@ -137,10 +137,8 @@ Popular section Styles
   font-weight: 700;
   font-size: 14px;
   color: #787885;
-  /* line-height: 10px; */
 }
 .blog-taxt p {
-  /* margin-top: 0; */
   margin: 0;
 }
 .grid-button {
@@ -153,6 +151,54 @@ Popular section Styles
   color: rgba(224, 44, 110, 0.87);
   border: none;
 }
+
+/*--------------------
+ footer styles 
+ ---------------------*/
+
+.footer-container {
+  background-color: #0a0826;
+}
+.footers {
+  text-align: center;
+}
+.footers h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+.footers p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #d9dbe1;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+.social-net .fa-brands {
+  color: #ffffff;
+}
+.social-net ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.social-net li {
+  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+  background-color: #22213c;
+  border-radius: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-net a {
+  /* border-radius: 50%; */
+}
+
 /*--------------------
  Responsive styles
  ----------------- */
