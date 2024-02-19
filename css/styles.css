@@ -16,6 +16,9 @@ Header styles
   width: 1200px;
   margin: 0 auto;
 }
+.header-area {
+  padding: 50px 0;
+}
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -79,7 +82,7 @@ main section styles
 .logo {
   margin-top: 100px;
   height: 104px;
-  border: 2px solid #c0ccda;
+  border: 1px solid #c0ccda;
   display: flex;
   align-items: center;
 }
@@ -163,6 +166,7 @@ Popular section Styles
   grid-column-gap: 30px;
 }
 .lower-section-single {
+  margin-top: 30px;
   border-radius: 5px;
   padding: 17px 15px;
   box-shadow: 2px 2px 30px 0px rgba(120, 120, 133, 0.201),
@@ -244,11 +248,163 @@ p {
   align-items: center;
 }
 
-/*--------------------
+/*------------------------------------------------------
  Responsive styles
- ----------------- */
-@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+ ------------------------------------------------------- */
+@media only screen and (min-width: 991px) and (max-width: 1500px) {
   .manu-bar {
     display: none;
+  }
+}
+/*-------------------------
+ Smaller Smartphone 
+ -------------------------*/
+
+@media only screen and (max-width: 672px) {
+  .container {
+    width: 100%;
+  }
+  /* -----------------
+  Header Styles
+  ------------------- */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header-title h3 {
+    font-size: 16px;
+  }
+  .main-manu li {
+    display: none;
+  }
+  .main-manu li:last-child {
+    display: block;
+  }
+  /* -----------------
+  Main body styles
+  -------------------- */
+  /* -------------------
+  Upper Section Styles 
+  ---------------------*/
+  .lsider {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  /* -----------------------
+  Logo section styles 
+  -------------------------*/
+  .main-logo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* -----------------------------
+  Blogs area section styles 
+  --------------------------------*/
+  .grid-container {
+    padding: 0 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ---------------------------------
+  Lower section styles 
+  -----------------------------------*/
+  .lower-section-container {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* -----------------------------
+Tablets styles 
+--------------------------------*/
+@media only screen and (min-width: 673px) and (max-width: 990px) {
+  .container {
+    width: 100%;
+  }
+
+  /* -----------------
+      Header Styles
+      ------------------- */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header-title h3 {
+    font-size: 16px;
+  }
+  .main-manu li {
+    display: none;
+  }
+  .main-manu li:last-child {
+    display: block;
+  }
+  /* -----------------
+      Main body styles
+---------------------- */
+  /* -------------------
+  Upper Section Styles 
+  ---------------------*/
+  .lsider {
+    padding: 0 20px;
+  }
+  .upper-infornation h1 {
+    font-size: 28px;
+  }
+
+  /* -----------------------
+  Logo section styles 
+  -------------------------*/
+  .main-logo {
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-logo div {
+    width: 171px;
+    height: 47px;
+  }
+
+  /* -----------------------------
+  Blogs area section styles 
+  --------------------------------*/
+  .grid-container {
+    padding: 0 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ---------------------------------
+  Lower section styles 
+  -----------------------------------*/
+  .lower-section-container {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*----------------------------------
+ Laptop styles 
+ -----------------------------------*/
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+  /* -----------------------------
+  Blogs area section styles 
+  --------------------------------*/
+  .grid-container {
+    padding: 0 10px;
+  }
+  /* ---------------------------------
+  Lower section styles 
+  -----------------------------------*/
+  .lower-section-container {
+    padding: 100px 10px;
   }
 }
