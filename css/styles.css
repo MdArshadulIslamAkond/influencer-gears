@@ -79,12 +79,12 @@ main section styles
 /*----------------------
  Logo section styles 
  ---------------------*/
-.logo {
-  margin-top: 100px;
-  height: 104px;
+.hr-1 {
   border: 1px solid #c0ccda;
-  display: flex;
-  align-items: center;
+  margin-top: 100px;
+}
+.hr-2 {
+  border: 1px solid #c0ccda;
 }
 
 .main-logo {
@@ -176,8 +176,6 @@ Popular section Styles
 }
 .lower-section-image img {
   width: 100%;
-  /* width: 240px;
-  height: 240px; */
 }
 .lower-tital {
   text-align: center;
@@ -298,8 +296,16 @@ p {
   Logo section styles 
   -------------------------*/
   .main-logo {
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-logo div {
+    width: 171px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
   }
 
   /* -----------------------------
@@ -370,6 +376,8 @@ Tablets styles
   .main-logo div {
     width: 171px;
     height: 47px;
+    display: flex;
+    justify-content: center;
   }
 
   /* -----------------------------
