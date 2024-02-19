@@ -110,8 +110,10 @@ Popular section Styles
   margin-top: 30px;
   border-radius: 5px;
   padding: 17px 15px;
-  box-shadow: 2px 2px 30px 0px rgba(120, 120, 133, 0.201),
-    2px 2px 30px 0px rgba(120, 120, 133, 0.201);
+  box-shadow: 0px 0px 30px rgba(120, 120, 133, 0.201);
+}
+.blog-image img {
+  width: 100%;
 }
 .blogs-tital {
   text-align: center;
@@ -137,7 +139,7 @@ Popular section Styles
   color: orange;
 }
 .blog-taxt {
-  width: 226px;
+  /* width: 226px; */
   font-weight: 700;
   font-size: 14px;
   color: #787885;
@@ -251,7 +253,7 @@ p {
 /*------------------------------------------------------
  Responsive styles
  ------------------------------------------------------- */
-@media only screen and (min-width: 991px) and (max-width: 1500px) {
+@media only screen and (min-width: 990px) and (max-width: 1500px) {
   .manu-bar {
     display: none;
   }
@@ -399,8 +401,9 @@ Tablets styles
   Blogs area section styles 
   --------------------------------*/
   .grid-container {
-    padding: 0 10px;
+    padding: 0;
   }
+
   /* ---------------------------------
   Lower section styles 
   -----------------------------------*/
